@@ -94,12 +94,30 @@
   <ol class="mb-0">
     <li>請嘗試將 Vue Bootstrap 的 Modal 元件載入。</li>
   </ol>
-</div>
-
-<div id="app">
   
 </div>
 
+<div id="app">
+   
+    <b-card title="Card Title"
+    img-src="https://picsum.photos/600/300/?image=25"
+    img-alt="Image"
+    img-top
+    tag="article"
+    style="max-width: 20rem;"
+    class="mb-2">
+<p class="card-text">
+Some quick example text to build on the card title and make up the bulk of the card's content.
+</p>
+<b-btn v-b-modal="'myModal'">Show Modal</b-btn>
+<b-modal id="myModal">
+  Hello From My Modal!
+</b-modal>
+</b-card>
+</div>
+<link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
+<script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+<script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
 
 
 <script>
@@ -128,5 +146,8 @@ var app = new Vue({
         </div>
       </div>
     </div>
+    
   </body>
+
+
 </html>
